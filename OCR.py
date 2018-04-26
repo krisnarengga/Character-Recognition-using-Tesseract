@@ -29,11 +29,7 @@ while(1):
 
     # Threshold the HSV image to get only white colors
     mask = cv2.inRange(hsv, lower_white, upper_white)
-    # Bitwise-AND mask and original image
-    #res = cv2.bitwise_and(frame,frame, mask= mask)
 
-    #cv2.imshow('mask',mask)
-    #cv2.imshow('res',res)
     i=i + 1
     result = ''
     if i == 30:
